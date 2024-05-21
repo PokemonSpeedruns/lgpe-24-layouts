@@ -95,6 +95,14 @@ video {
 	text-align: right;
 }
 
+.runner-top-row > .catch-count {
+	display: inline-block;
+	min-width: 30px;
+	font-size: 19pt;
+	text-align: right;
+	padding-left: 37px;
+}
+
 .runner-bottom-row > .pronouns {
 	text-align: left;
 	display: inline-block;

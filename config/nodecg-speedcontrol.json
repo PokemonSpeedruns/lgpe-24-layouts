@@ -42,6 +42,10 @@
         {
           "name": "Game",
           "key": "runnerGame"
+        },
+        {
+          "name": "Tracker Key",
+          "key": "trackerKey"
         }
       ]
     }

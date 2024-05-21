@@ -32,8 +32,8 @@ $(() => {
 
 	function resetMedals() {
 		for (let k = 1; k < 6; k++) {
-			$('#finalTime' + k).text('');
-			$('#medals-img' + (k)).attr('src', POKEBALL_IMGS[4]);
+			hideFinalTime(k);
+			$('#medals-img' + k).attr('src', POKEBALL_IMGS[4]);
 		}
 		completedID = [];
 		forfeitID = [];
@@ -67,7 +67,7 @@ $(() => {
 				// If we have a finished runner on the layout but the runner is not finished/forfeited, we set the timer next to it.
 				// This can be helpful during tech issues, so people know the runner is still going even if their feed is down.
 				if ($('.finished-runner-container #runner-name' + (index + 1)).length) {
-					$('#finalTime' + (index + 1)).text(newVal.time);
+					showFinalTime(index + 1, newVal.time);
 				}
 			}
 		}
@@ -81,7 +81,7 @@ $(() => {
 		for (let i = 0; i < completedID.length; i++) {
 			for (let k = 0; k < runData.teams.length; k++) {
 				if (runData.teams[k].id === completedID[i]) {
-					$('#finalTime' + (k + 1)).text(timer.value.teamFinishTimes[runData.teams[k].id].time);
+					showFinalTime(k + 1, timer.value.teamFinishTimes[runData.teams[k].id].time);
 					$('#medals-img' + (k + 1)).attr('src', POKEBALL_IMGS[n]);
 					n++;
 				}
@@ -94,7 +94,7 @@ $(() => {
 		for (let i = 0; i < forfeitID.length; i++) {
 			for (let k = 0; k < runData.teams.length; k++) {
 				if (runData.teams[k].id === forfeitID[i]) {
-					$('#finalTime' + (k + 1)).text('Forfeit');
+					showFinalTime(k + 1, 'Forfeit');
 					$('#medals-img' + (k + 1)).attr('src', POKEBALL_IMGS[4]);
 					n++;
 				}
@@ -107,8 +107,8 @@ $(() => {
 			let n = completedID.indexOf(id);
 			completedID.splice(n, 1);
 			for (let k = 1; k < 5; k++) {
-				$('#finalTime' + k).text('');
-				$('#medals-img' + (k)).attr('src', POKEBALL_IMGS[4]);
+				hideFinalTime(k);
+				$('#medals-img' + k).attr('src', POKEBALL_IMGS[4]);
 			}
 			setMedal(completedID[0]);
 		}
@@ -116,10 +116,23 @@ $(() => {
 			let n = forfeitID.indexOf(id);
 			forfeitID.splice(n, 1);
 			for (let k = 1; k < 5; k++) {
-				$('#finalTime' + k).text('');
-				$('#medals-img' + (k)).attr('src', POKEBALL_IMGS[4]);
+				hideFinalTime(k);
+				$('#medals-img' + k).attr('src', POKEBALL_IMGS[4]);
 			}
 			setMedal(forfeitID[0]);
 		}
+	}
+
+	function showFinalTime(id, finalTime) {
+		// The catch count uses the same space as the final time, so we hide it when we want to show the time.
+		$('#catch-count' + id).hide();
+		$('#finalTime' + id).show();
+		$('#finalTime' + id).text(finalTime);
+	}
+
+	function hideFinalTime(id, finalTime) {
+		$('#finalTime' + id).text('');
+		$('#finalTime' + id).hide();
+		$('#catch-count' + id).show();
 	}
 });

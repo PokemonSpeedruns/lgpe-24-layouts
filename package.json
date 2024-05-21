@@ -1,0 +1,101 @@
+{
+  "name": "lgpe-24-layouts",
+  "version": "0.0.1",
+  "description": "Layouts for the LGPE 2024 Tournament",
+  "author": {
+    "name": "PokemonSpeedruns"
+  },
+  "files": [
+    "graphics"
+  ],
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "graphics": [
+      {
+        "file": "3_Racers.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "2_Racers_R1Finished.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "2_Racers_R2Finished.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "2_Racers_R3Finished.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "2_Racers.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "1_Racer_R1.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "1_Racer_R2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "1_Racer_R3.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Starting_Soon.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Ending.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Upcoming_Races_3.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Upcoming_Races_2.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Upcoming_Races_1.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Pregame.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Postgame.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "Background.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "repository": "https://github.com/PokemonSpeedruns/lgpe-24-layouts.git",
+  "license": "Apache-2.0"
+}

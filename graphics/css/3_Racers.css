@@ -1,0 +1,43 @@
+/* Runners. */
+#runner-container1 {
+	left: 7px;
+	top: 2px;
+}
+
+#runner-container2 {
+	left: 7px;
+	top: 543px;
+}
+
+#runner-container3 {
+	left: 965px;
+	top: 2px;
+}
+
+/* Commentators. */
+#comms-container1 {
+	left: 990px;
+	top: 951px;
+}
+
+#comms-container2 {
+	left: 1302px;
+	top: 951px;
+}
+
+#comms-container3 {
+	left: 1612px;
+	top: 951px;
+}
+
+/* Timer. */
+#timer {
+    left: 1220px;
+    top: 692px;
+}
+
+/* Round. */
+#round {
+    left: 1220px;
+    top: 834px;
+}

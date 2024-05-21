@@ -1,0 +1,39 @@
+/* Commentators */
+#comms-container1 {
+	left: 40px;
+	top: 155px;
+}
+
+#comms-container2 {
+	left: 669px;
+	top: 155px;
+}
+
+#comms-container3 {
+	left: 1299px;
+	top: 155px;
+}
+
+/* Runners */
+.runner-container {
+	width: 585px;
+}
+
+#runner-container1 {
+	left: 40px;
+    top: 977px;
+}
+
+#runner-container2 {
+	left: 670px;
+    top: 977px;
+}
+
+#runner-container3 {
+	left: 1300px;
+    top: 977px;
+}
+
+.runner-container .runner-name {
+	padding-right: 208px;
+}

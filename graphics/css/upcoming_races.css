@@ -1,0 +1,40 @@
+.on-deck-info-container {
+	position: absolute;
+	width: 1902px;
+	height: 57px;
+}
+
+
+.info > .runner {
+	display: inline-block;
+	width: 590px;
+	height: 52px;
+	padding-right: 35px;
+	font-size: 30pt;
+	text-align: center;
+}
+
+.tech-info-container {
+	position: absolute;
+	display: flex;
+	width: 1309px;
+	height: 56px;
+}
+
+.on-deck-channel {
+	float: left;
+	vertical-align: middle;
+	width: 492px;
+	font-size: 30pt;
+	text-align: center;
+}
+
+.on-deck-start {
+	width: 497px;
+	font-size: 30pt;
+	text-align: center;
+}
+
+.on-deck-start span {
+	white-space:nowrap;
+}

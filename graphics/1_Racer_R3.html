@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+	  
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/common.css" />
+      <link rel="stylesheet" href="css/1_Racer.css" />
+      <video autoplay loop muted> 
+         <source src="img/layouts/GAME_x1.webm" type="video/webm">
+      </video>
+	  
+      <!-- JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/layouts/game-layout.js"></script>
+      <script src="js/timer.js"></script>
+      <script src="js/medals.js"></script>
+   </head>
+   <body>
+   
+      <!-- Runner details -->
+      <div class="runner-container" id="runner-container1">
+         <div class="runner-game" id="runner-game3">
+            <img class="game-img" id="game-img3" />
+         </div>
+         <div class="runner-info" id="runner-info1">
+            <div class="runner-top-row" id="runner-top-row1">
+               <div class="runner-name" id="runner-name3"></div>
+               <div class="medals" id="medals3">
+                  <img class="medals-img" id="medals-img3" />
+               </div>
+               <div class="finalTime" id="finalTime3"></div>
+            </div>
+            <div class="runner-bottom-row" id="runner-bottom-row1">
+               <div class="pronouns" id="pronouns3"></div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Finished Runner details -->
+      <div class="finished-runner-container" id="finished-runner-container1">
+         <div class="runner-game" id="runner-game1">
+            <img class="game-img" id="game-img1" />
+         </div>
+         <div class="runner-info" id="finished-runner-info1">
+            <div class="runner-top-row" id="finished-runner-top-row1">
+               <div class="runner-name" id="runner-name1"></div>
+               <div class="medals" id="medals1">
+                  <img class="medals-img" id="medals-img1" />
+               </div>
+               <div class="finalTime" id="finalTime1"></div>
+            </div>
+            <div class="runner-bottom-row" id="finished-runner-bottom-row1">
+               <div class="pronouns" id="pronouns1"></div>
+            </div>
+         </div>
+      </div>
+      <div class="finished-runner-container" id="finished-runner-container2">
+         <div class="runner-game" id="runner-game2">
+            <img class="game-img" id="game-img2" />
+         </div>
+         <div class="runner-info" id="finished-runner-info2">
+            <div class="runner-top-row" id="finished-runner-top-row2">
+               <div class="runner-name" id="runner-name2"></div>
+               <div class="medals" id="medals2">
+                  <img class="medals-img" id="medals-img2" />
+               </div>
+               <div class="finalTime" id="finalTime2"></div>
+            </div>
+            <div class="runner-bottom-row" id="finished-runner-bottom-row2">
+               <div class="pronouns" id="pronouns2"></div>
+            </div>
+         </div>
+      </div>
+
+      <div class="comms-container" id="comms-container1">
+         <div class="comms-name" id="commentator1Name"></div>
+         <div class="comms-pronouns" id="commentator1Pronouns"></div>
+      </div>
+      <div class="comms-container" id="comms-container2">
+         <div class="comms-name" id="commentator2Name"></div>
+         <div class="comms-pronouns" id="commentator2Pronouns"></div>
+      </div>
+      <div class="comms-container" id="comms-container3">
+         <div class="comms-name" id="commentator3Name"></div>
+         <div class="comms-pronouns" id="commentator3Pronouns"></div>
+      </div>
+	  
+      <!-- Timer -->
+      <div id="timer"></div>
+
+      <!-- Round -->
+      <div id="round"></div>
+   </body>
+</html>

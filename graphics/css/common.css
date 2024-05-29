@@ -97,7 +97,7 @@ video {
 
 .runner-top-row > .catch-count {
 	display: inline-block;
-	min-width: 30px;
+	min-width: 60px;
 	font-size: 19pt;
 	text-align: right;
 	padding-left: 26px;
